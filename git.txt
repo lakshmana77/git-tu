@@ -1,0 +1,11 @@
+import json
+
+# Convert Python dict to JSON string
+person = {"name": "Alice", "age": 30}
+json_string = json.dumps(person)
+print(json_string)
+
+# Convert JSON string to Python dict
+data = '{"name": "Bob", "age": 25}'
+person_dict = json.loads(data)
+print(person_dict["name"])  # Output: Bob
